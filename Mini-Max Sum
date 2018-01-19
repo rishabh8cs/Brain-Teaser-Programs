@@ -1,0 +1,48 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+		 Scanner s=new Scanner(System.in);
+     long q,y=0,w,e,r,t; 
+     int []a=new int[5]; 
+     long []j=new long[5];
+       //read array
+      for(int x=0;x<5;x++){   
+        a[x]=s.nextInt();
+      } 
+        for(int b=0;b<5;b++){y=0;
+            for(int c=0;c<5;c++)
+                { 
+                    y  +=  a[c];            
+                }
+            y=y-a[b] ;
+            
+         switch(b){
+             case 0:
+                 j[0]=y;     //j is  array.
+                 break;
+            case 1:
+                 j[1]=y;      
+                 break;
+            case 2:
+                 j[2]=y;
+                 break;     
+            case 3:
+                 j[3]=y;
+                 break;
+            case 4:
+                 j[4]=y;
+                 break;     
+         }//end switch
+        }//end for(b)
+      Arrays.sort(j);
+      
+     System.out.println(j[0]+" "+j[4]);
+        }
+    
+}
