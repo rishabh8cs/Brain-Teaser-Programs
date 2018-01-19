@@ -11,7 +11,7 @@ public class Solution {
             else if(a[i]<0)
                 cn++;
             else
-                c0++;
+                 c0++;
         }
         div=n;
         fp=cp/div;
