@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    static void fun(int a[], int n){
+        float cp=0,cn=0,c0=0,fp,fn,f0,div;
+        for(int i=0;i<n;i++){
+            if(a[i]>0)
+                cp++;
+            else if(a[i]<0)
+                cn++;
+            else
+                c0++;
+        }
+        div=n;
+        fp=cp/div;
+        fn=cn/div;
+        f0=c0/div;
+        System.out.println(fp);
+                System.out.println(fn);
+                System.out.println(f0);
+    }
+        
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n = sc.nextInt();
+        int a[]= new int[n];
+        for(int i=0;i<n;i++){
+            a[i]=sc.nextInt();
+        }
+        fun(a,n);
+    }
+}
